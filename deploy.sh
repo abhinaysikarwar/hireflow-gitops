@@ -342,7 +342,7 @@ CURRENT_STEP="creating namespace"
 
 log "Creating namespace..."
 
-kubectl apply -f namespace.yaml
+kubectl apply -f k8s/namespace.yaml
 
 if kubectl wait \
     --for=jsonpath='{.status.phase}'=Active \
